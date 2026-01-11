@@ -1,22 +1,15 @@
-Social Media Sentiment Analyser
-
+Sentilytics - Social Media Sentiment Analyser
 A tool to analyze sentiment from social media text data using Natural Language Processing (NLP) techniques. This project processes datasets from platforms like Twitter, Reddit, and YouTube to classify text into positive, negative, and neutral sentiment.
 
 📌 Project Overview
+This project implements an automated Social Media Sentiment Analysis system that classifies user-generated text into Positive, Negative, or Neutral sentiments.
+The system combines traditional Machine Learning techniques with Large Language Models (BERT) to provide accurate and context-aware sentiment predictions.
+The project was developed as part of a Skill Internship Program and is inspired by recent academic research in sentiment analysis.
 
-Social Media Sentiment Analyser is built to help developers, researchers, and data enthusiasts gain insights into public opinion expressed across social platforms. By applying sentiment analysis, this tool can uncover how audiences feel about topics, brands, or events.
-
-The repository contains:
-
-Dataset files from multiple social networks
-
-Preprocessing modules
-
-Sentiment analysis logic
-
-A simple interactive UI (e.g., via Gradio)
-
-Sample configurations
+📚 Research Reference
+This project is inspired by and aligned with the research paper:
+“Social Media Sentiment Analysis”, Encyclopedia, 2024.
+The methodology and results of this implementation closely match the findings discussed in the paper.
 
 📂 Repository Structure
 social_media_sentiment_analyser/
@@ -33,80 +26,54 @@ social_media_sentiment_analyser/
 └── LICENSE                    # License file
 
 🚀 Features
-
 ✔️ Multi-platform sentiment analysis – supports Twitter, Reddit, and YouTube data
 ✔️ Data preprocessing – text cleaning, tokenization, and normalization
 ✔️ Sentiment prediction – classifies text as positive, negative, or neutral
 ✔️ Interactive UI – Optional Gradio interface for real-time testing
 ✔️ Multiple datasets supported – ready-to-use .csv data for experimentation
 
-🧠 What Is Sentiment Analysis?
+🗂️ Dataset
+The following datasets were used and merged:
+• Twitter Dataset
+• Reddit Dataset
+• YouTube Comments Dataset
+• Generic Sentiment Dataset
+All datasets were cleaned, standardized, and combined to ensure data diversity and robustness.
 
-Sentiment analysis is the automated process of detecting emotional tone (positive, negative, or neutral) in text using NLP and machine learning. This technique allows you to quantify opinions from large volumes of unstructured social media text.
-
-📥 Getting Started
-🔧 Prerequisites
-
-Install Python 3.8+ and ensure you have pip available.
-
-📦 Install Dependencies
-pip install -r requirements.txt
-
-
-Common dependencies may include:
-
-pandas
-numpy
-scikit-learn
-nltk
-gradio
-
-▶️ Running the App
-
-If your project uses a Gradio web UI:
-
-python app.py
-
-
-This should launch a local interface where you can input text and see sentiment predictions.
-
-For a script-based workflow, you might run:
-
-python main.py --data sample_data/Twitter_Data.csv
-
-🧪 How It Works (Typical Flow)
-
-Load Dataset – read CSV file with social media text
-
-Preprocess Text – remove noise (links, emojis, stopwords)
-
-Extract Features – convert text to numerical features
-
-Apply Model – predict sentiment polarity
-
-Output Results – visualize or save classification results
+🛠️ Tech Stack
+➤ Programming Language: Python
+➤ Libraries: pandas, numpy, nltk, scikit-learn
+➤ LLM: BERT (Hugging Face Transformers)
+➤ Feature Extraction: TF-IDF
+➤ ML Model: Multinomial Naive Bayes
+➤ UI: Gradio
+➤ Environment: Google Colab
 
 📌 Example Usage
 from sentiment_analyser import analyse_sentiment
-
 text = "I love how helpful this project is!"
 result = analyse_sentiment(text)
 print(result) # Positive / Negative / Neutral
 
-🛠️ Customization
+📊 Results
+• The ML model provides fast and efficient sentiment predictions
+• BERT demonstrates superior contextual understanding
+• Results align with existing academic research on sentiment analysis
 
-You can extend the project by:
+📌 Applications
+• Public opinion analysis
+• Political sentiment monitoring
+• Brand reputation analysis
+• Social media trend analysis
 
-Adding support for more platforms like Instagram
+🔮 Future Scope
+➤ Real-time sentiment analysis
+➤ Multilingual sentiment detection
+➤ Multimodal sentiment analysis
+➤Cloud deployment
 
-Integrating deep learning models (BERT, LSTM)
+👥 Contributors
+Praman Jain & Prasun Singh
 
-Adding visual dashboards
-
-📚 References
-
-For general context about sentiment analysis:
-
-IBM: What is Sentiment Analysis (positive/negative/neutral)
-
-Social media sentiment explained with use-cases
+📄 License
+This project is for educational and research purposes only.
